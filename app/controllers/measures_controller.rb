@@ -30,7 +30,7 @@ class MeasuresController < ApplicationController
 
     respond_to do |format|
       if @measure.save
-        format.html { redirect_to @measure, notice: 'Measure was successfully created.' }
+        format.html { redirect_to measures_url, notice: 'Measure was successfully created.' }
         format.json { render :show, status: :created, location: @measure }
       else
         format.html { render :new }
