@@ -16,7 +16,7 @@
     <% @measures.each do |measure| %>
       <tr>
         <td><%= measure.at %></td>
-        <td><%= measure.goal %></td>
+        <td><%= measure.goal.name %></td>
         <td><%= measure.amount %></td>
         <td><%= link_to 'Show', measure %></td>
         <td><%= link_to 'Edit', edit_measure_path(measure) %></td>
