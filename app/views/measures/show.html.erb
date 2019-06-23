@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>At:</strong>
+  <%= @measure.at %>
+</p>
+
+<p>
+  <strong>Goal:</strong>
+  <%= @measure.goal %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @measure.amount %>
+</p>
+
+<%= link_to 'Edit', edit_measure_path(@measure) %> |
+<%= link_to 'Back', measures_path %>

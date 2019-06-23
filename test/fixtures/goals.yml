@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  interval: MyString
+  unit: MyString
+  positive_goal: false
+  amount: 9.99
+
+two:
+  name: MyString
+  interval: MyString
+  unit: MyString
+  positive_goal: false
+  amount: 9.99
