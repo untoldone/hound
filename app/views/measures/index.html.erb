@@ -2,6 +2,8 @@
 
 <h1>Measures</h1>
 
+<%= link_to 'New Measure', new_measure_path %>
+
 <table>
   <thead>
     <tr>
@@ -13,7 +15,7 @@
   </thead>
 
   <tbody>
-    <% @measures.each do |measure| %>
+    <% @measures.order("created_at DESC").each do |measure| %>
       <tr>
         <td><%= measure.at %></td>
         <td><%= measure.goal.name %></td>
@@ -27,5 +29,3 @@
 </table>
 
 <br>
-
-<%= link_to 'New Measure', new_measure_path %>
